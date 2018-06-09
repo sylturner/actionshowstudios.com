@@ -1,0 +1,25 @@
+title: "Giant"
+location: "Atlanta, GA"
+bio: |
+  _Giant_, is an improv duo consisting of two small humans, Tom and Karen.
+  What they lack in stature, they make up for in commitment and character work on stage.
+  In this show you get to watch the relationship between two beautifully created in depth
+  characters exploring their emotions in one setting.
+
+  There will be moments of awkward silent tension, laughter, anger, and a hysterically
+  passionate interpretive dance. Hold on to that Six Flags coupon folks, because this
+  roller coaster of emotions will be the best ride all year.
+
+  Tom and Karen are both ensemble members at Dad's Garage Theater and have been each
+  performing improv for 10+ years. They have both been teaching, learning, and performing
+  locally and internationally from Edmonton's Improvaganza to Georgia Tech's Black Box Festival.
+
+image: "giant.jpg"
+url: https://dadsgarage.com/
+facebook: "https://www.facebook.com/DadsGarageTheatre/"
+
+showtimes:
+  - day: Saturday
+    time: 07:30pm
+    stage: Black Box
+    tix: https://www.freshtix.com/events/the-nat-turner-revue

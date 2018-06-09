@@ -1,0 +1,13 @@
+title: "Good People"
+location: "Chicago, IL"
+bio: |
+  We met on our first improv team we were ever on in Chicago, it was called Shrimp Sale.
+  After tequila shots on True's birthday we were instant best friends. We've navigated
+  through the ups and downs of comedy in Chicago but have remained together the entire time.
+  We're just a couple of good people in this world doing our best.
+image: "good-people.jpg"
+showtimes:
+  - day: Saturday
+    time: 09:30pm
+    stage: Black Box
+    tix: https://www.freshtix.com/events/good-people

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<%= partial "partials/head" %>
+<body data-target=".navbar-fixed-top">
+  <div id="main">
+    <%= partial "partials/nav" %>
+    <section id="bio" class="container content-section">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1">
+              <h1><%= current_page.data.title %></h1>
+              <% if current_page.data.image && current_page.data.image != "" %>
+                <div class="pull-right col-xs-12 col-sm-6"><img class="img-responsive" src="/images/shows/<%=current_page.data.image %>" title="<%= current_page.data.title %>" alt="<%= current_page.data.title %>"/></div>
+              <% end %>
+              <% if current_page.data.location %>
+                <h4><%= current_page.data.location %></h4>
+              <% end %>
+              <p>
+                <em><%= current_page.data.time %></em><br/>
+                <% if current_page.data.day %>
+                  <%= partial "tickets/#{current_page.data.day}" %>
+                <% end %>
+                <% if current_page.data.days %>
+                    <% current_page.data.days.each do |day| %>
+                    <%= partial "tickets/#{day}" %>
+                  <% end %>
+                <% end %>
+              </p>
+              <%= current_page.data.bio %>
+              <p>
+                <% if current_page.data.url %>
+                  <a href="<%=current_page.data.url%>" title="<%=current_page.data.title%>" target="_blank"><i class="fa fa-globe"></i> <%=current_page.data.title%></a><br/>
+                <% end %>
+                <% if current_page.data.facebook %>
+                  <a href="<%=current_page.data.facebook%>" title="<%=current_page.data.title%>" target="_blank"><i class="fa fa-facebook-official"></i> Facebook</a><br/>
+                <% end %>
+                <% if current_page.data.twitter %>
+                  <a href="https://twitter.com/<%=current_page.data.twitter%>" title="<%=current_page.data.twitter%>" target="_blank"><i class="fa fa-twitter"></i> Twitter</a><br/>
+                <% end %>
+                <% if current_page.data.instagram %>
+                  <a href="<%=current_page.data.instagram%>" title="<%=current_page.data.instagram%>" target="_blank"><i class="fa fa-instagram"></i> Instagram</a><br/>
+                <% end %>
+                <% if current_page.data.youtube %>
+                  <a href="<%=current_page.data.youtube%>" title="<%=current_page.data.youtube%>" target="_blank"><i class="fa fa-youtube"></i> YouTube</a><br/>
+                <% end %>
+                </p>
+              </div>
+              <div class="col-lg-10 col-lg-offset-1">
+                <% if current_page.data.bios %>
+                  <% current_page.data.bios.each do |bio| %>
+                    <%= partial "bios/#{bio}" %>
+                  <% end %>
+                <% end %>
+              </div>
+        </div>
+    </section>
+    <%= yield %>
+    <%= partial "partials/footer" %>
+  </div>
+    <%= partial "partials/bottom_js" %>
+  </body>
+</html>

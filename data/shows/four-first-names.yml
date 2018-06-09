@@ -1,0 +1,16 @@
+title: "Four First Names"
+location: "Orlando, FL"
+
+bio: |
+  With more than 30 combined years experience acting, hosting and teaching, Richard Paul and Chris Barry combine to make up the improv duo Four First Names. They are both veterans of SAK Comedy Lab in Orlando, Florida. Four First Names performs a long-form duo set called DIVE IN; MOVE FORWARD; LOOK BACK. Using an audience vote to select from unique forms made up on the fly, Four First Names dives in to create characters and environments, moves forward on a journey and then looks back with the audience to reflect on what transpired.
+
+  Richard Paul has been an improviser, actor and instructor for more than 20 years at SAK Comedy Lab, Walt Disney World, Offsides Improv and is the founder of Unity in Playback Theater, Orlando's first Playback Theater troupe. His film acting credits include Keeping Up with the Joneses (2016) and GeoStorm (2017). Chris Barry is an actor and host at SAK Comedy Lab, The Random Processes, and Unity in Playback Theater. The pair met when Chris was a student in Richard's class at SAK University.
+image: "four-first-names.png"
+url: "http://www.fourfirstnames.com/"
+facebook: "https://www.facebook.com/fourfirstnames/"
+
+showtimes:
+  - day: Saturday
+    time: 06:00pm
+    stage: Main Stage
+    tix: https://www.freshtix.com/events/four-first-names

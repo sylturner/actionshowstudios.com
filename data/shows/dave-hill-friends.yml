@@ -1,0 +1,23 @@
+title: "Dave Hill & Friends"
+bio: |
+  Dave Hill and friends do handsome improv together.
+
+  Dave Hill is an actor, improviser and writer from Chicago where he trained at the iO and Second City.  Now
+  living in LA he improvises with Hill Jones, King Ten and The Armando Show. His work can be seen in the
+  new NBC sitcom GREAT NEWS as well as multiple other tv appearances including MODERN
+  FAMILY.  His voice has been heard on such animated series as AMERICAN DAD, SQUIDBILLIES and
+  THE MOST POPULAR GIRLS IN SCHOOL.   He co-wrote, co-directed and co-starred in the now available
+  feature film THE NIGHT IS YOUNG.  He has died hundreds of different ways while doing voices for video
+  games.  Hundreds.
+image: "dave-hill.jpg"
+highlight: true
+
+showtimes:
+  - day: Friday
+    time: 09:00pm
+    stage: Main Stage
+    tix: https://www.freshtix.com/events/andel-arch-dave-hill
+  - day: Saturday
+    time: 09:00pm
+    stage: Main Stage
+    tix: https://www.freshtix.com/events/dave-hill

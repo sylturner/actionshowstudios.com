@@ -1,0 +1,16 @@
+title: "St.Clair & Morris"
+location: Los Angeles, CA
+bio: |
+  St. Clair and Morris are two Chicago trained improvisers.  While in Chicago they worked at
+  Improv Olympic, Annoyance, and Second City.  They both wrote a few revues for The
+  Second City on both the ETC and Mainstage theaters.  Currently Brad and Andy both live in
+  Los Angeles where they perform and go to Clippers games together.
+image: "stclair-morris.jpg"
+headliner: true
+
+showtimes:
+  - day: Friday
+    time: 10:00pm
+    stage: Main Stage
+    tix: https://www.freshtix.com/events/st-clair-morris
+

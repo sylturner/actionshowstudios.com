@@ -1,0 +1,20 @@
+<!-- workshops Section -->
+<section id="workshops" class="content-section">
+  <div class="container">
+    <div class="col-lg-8 col-lg-offset-2">
+      <h2>Workshops</h2>
+      <p>The Atlanta Improv Festival weekend isn’t just for watching improv til your eyes melt, but for all improvisers to tone those improv muscles by participating in workshops. We lined up a bunch of useful and fun workshops for the weekend taught by amazing improvisers from all over the country!</p>
+      <p>More workshops will be announced over the next few weeks, so stay tuned!</p>
+    </div>
+    <div class="col-xs-12">
+      <% data.workshops.group_by{|x| x[1]['time']}.sort_by{|x| x[0]}.each do |workshop| %>
+        <h3 class="text-center"><%= workshop[0] %></h3>
+        <div class="row">
+          <% workshop[1].each do |w| %>
+            <p class="<% if workshop[1].count > 1 %>col-sm-4<% else %>col-sm-12<% end %> text-center"><a href="/workshops/<%= w[0] %>/"><%= w[1]["title"] %></a><br/><em>with</em> <%= w[1]["teacher"] %></p>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</section>

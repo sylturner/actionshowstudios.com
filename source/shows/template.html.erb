@@ -1,0 +1,55 @@
+---
+layout: "layout"
+---
+<section id="show" class="container content-section">
+  <div class="row">
+    <div class="col-lg-10 col-lg-offset-1">
+      <p class="breadcrumbs"><a href="/shows/"><i class="fa fa-chevron-left" aria-hidden="true"></i> Shows</a></p>
+      <h1><%= show.title %></h1>
+      <% if show.location %>
+        <h4><%= show.location %></h4>
+      <% end %>
+      <% if show.image && show.image != "" %>
+        <div class="pull-right col-xs-12 col-sm-6"><img class="img-responsive show-img" src="/images/shows/<%=show.image %>" title="<%= show.title %>" alt="<%= show.title %>"/></div>
+      <% end %>
+      <div class="showtime">
+      <% show.showtimes.each do |showtime| %>
+        <p class="text-center">
+        <em><%= showtime.day %> <%= showtime.time %> | <%= showtime.stage %></em>
+        </p>
+        <p class="text-center">
+        <a href="<%= showtime.tix %>" class="btn btn-default"><i class='fa fa-ticket' aria-hidden='true'></i> Tix</a>
+        <a href="https://www.freshtix.com/events/2018-atlanta-improv-festival" class="btn btn-default"><i class='fa fa-id-badge' aria-hidden='true'></i> Passes</a>
+        </p>
+      <% end %>
+      </div>
+      <%= markdown(show.bio) %>
+      <%# if show.cast %>
+      <% if false %>
+        <h4>Cast</h4>
+        <p>
+          <% show.cast.each do |bio| %>
+            <a href="/bios/<%= bio %>"><%= data.bios[bio].name %></a><br/>
+          <% end %>
+        </p>
+      <% end %>
+      <p>
+      <% if show.url %>
+        <a href="<%=show.url%>" title="<%=show.title%>" target="_blank"><i class="fa fa-globe"></i> <%=show.title%></a><br/>
+      <% end %>
+      <% if show.facebook %>
+        <a href="<%=show.facebook%>" title="<%=show.title%>" target="_blank"><i class="fa fa-facebook-official"></i> Facebook</a><br/>
+      <% end %>
+      <% if show.twitter %>
+        <a href="https://twitter.com/<%=show.twitter%>" title="<%=show.twitter%>" target="_blank"><i class="fa fa-twitter"></i> Twitter</a><br/>
+      <% end %>
+      <% if show.instagram %>
+        <a href="<%=show.instagram%>" title="<%=show.instagram%>" target="_blank"><i class="fa fa-instagram"></i> Instagram</a><br/>
+      <% end %>
+      <% if show.youtube %>
+        <a href="<%=show.youtube%>" title="<%=show.youtube%>" target="_blank"><i class="fa fa-youtube"></i> YouTube</a><br/>
+      <% end %>
+      </p>
+    </div>
+  </div>
+</section>

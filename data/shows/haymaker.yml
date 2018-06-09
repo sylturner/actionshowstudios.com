@@ -1,0 +1,16 @@
+title: "Haymaker"
+location: "Greenville, SC"
+
+bio: |
+  Starting with a suggestion from the audience, Haymaker will create a 30 minute theatrical show on the spot. Sometimes it'll feel like a play and othertimes like a dream: the scenes build, push, crash, and fold into each other... themes, characters, patterns, and ideas all might appear and reappear... the original suggestion might come back into focus in surpising ways. But you never know—and neither do we!
+
+  For the last 3 years Haymaker has anchored Harold Night at the Alchemy Comedy Theater. We seamlessly build a show using the basic structure of a Harold and building from there. It's fast. It's fun. It's long form in it's purest and funniest. We've done the NC Comedy Arts Festival, Downtown Raleigh Improv Festival, New South Comedy Festival, and are looking forward to coming to Atlanta!
+image: "haymaker.jpg"
+url: "http://alchemycomedy.com/about/teams/haymaker/"
+facebook: "https://www.facebook.com/AlchemyComedy"
+twitter: AlchemyComedy
+showtimes:
+  - day: Saturday
+    time: 07:00pm
+    stage: Main Stage
+    tix: https://www.freshtix.com/events/haymaker

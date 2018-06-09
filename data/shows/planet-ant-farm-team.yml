@@ -1,0 +1,17 @@
+title: "Planet Ant Farm Team"
+location: "Detroit, MI"
+bio: |
+  The Planet Ant Farm team is a group composed of talented improvisers from
+  the greater metro Detroit area. Established in early 2017 the group consists
+  of 12 mainstage cast members and performs twice weekly in various Planet Ant
+  Productions. The team is led by Mike McGettigan, Training Center Director and
+  instructor and focuses on the comedy of honest connection and the absurd.
+image: "planet-ant-farm-team.jpg"
+url: http://www.planetant.com/
+facebook: https://www.facebook.com/ThePlanetAntFarmTeam/
+
+showtimes:
+  - day: Saturday
+    time: 09:30pm
+    stage: Black Box
+    tix: https://www.freshtix.com/events/good-people

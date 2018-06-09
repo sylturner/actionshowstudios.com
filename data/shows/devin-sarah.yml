@@ -1,0 +1,12 @@
+title: "Devin & Sarah"
+location: "Chicago, IL"
+bio: |
+  Devin&Sarah have performed and produced shows for the stages of Second City, iO, The Annoyance, Stage 773, and The Crowd theater in Chicago. Their current show "Do I Know You?" is an improvised meet and greet that grabs inspiration from the real life story of two random audience members. These two best friends have been able to transform their off stage friendship into onstage chemistry that is palpable to everyone watching.
+image: "devin-sarah.jpg"
+facebook: https://www.facebook.com/SarahAndDevin/
+
+showtimes:
+  - day: Friday
+    time: 07:30pm
+    stage: Black Box
+    tix: https://www.freshtix.com/events/devin-sarah

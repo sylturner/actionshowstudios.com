@@ -1,0 +1,24 @@
+title: "Andel & Arch"
+location: "Chicago, IL"
+bio: |
+  Andel Sudik and Ryan Archibald have been
+  friends and comedy partners for ten years, they have worked
+  and toured together all over the World with The Second City
+  and Boom Chicago, later forming this independent comedy team
+  and finding a home at the famed Annoyance Theater in Chicago. 
+  Arch and Andel have written several sketch shows together,
+  including "Tha' Corporate Show" and "Live Network Showcase"
+  and have performed together at Chicago's Sketch Fest and the
+  Chicago Improv Festival multiple times.  This ensemble is
+  known for its strong satirical point of view, their focus on
+  acting and hilarious relatable characters.  Most recently they
+  had a run last fall at the Annoyance with the Blue Man Group's
+  Callum Grant supporting musically.
+image: "andel-arch.jpg"
+highlight: true
+
+showtimes:
+  - day: Friday
+    time: 09:00pm
+    stage: Main Stage
+    tix: https://www.freshtix.com/events/andel-arch-dave-hill

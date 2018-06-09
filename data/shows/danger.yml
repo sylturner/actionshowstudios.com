@@ -1,0 +1,15 @@
+title: "Danger! The Show"
+location: "Atlanta, GA"
+
+bio: |
+  Village Theatre's own Danger! The Show is addicted to risk and performs every Thursday night. You never quite know what can or will happen.
+  The comedic risks they take are often hilarious... always DANGEROUS!
+image: "danger.jpg"
+url: "http://villagecomedy.com/"
+facebook: "https://www.facebook.com/DangerTheShow"
+
+showtimes:
+  - day: Thursday
+    time: 08:00pm
+    stage: Main Stage
+    tix: https://www.freshtix.com/events/danger-the-show-and-meat--3

@@ -1,0 +1,29 @@
+title: "3Peat"
+location: "Chicago, IL"
+bio: |
+  3Peat is a critically acclaimed and award winning Improv/Sketch/Stand Up Group. The members met
+  while performing and teaching at The Second City and iO Theater in Chicago. Tired of each being the
+  only minority in their shows, the group came together to create their own brand of comedy that fits
+  their high energy and experiences. The team boasts members that write and perform in Television,
+  film, and on stage across the world. Don’t miss this show!
+
+  Our cast has worked on or currently works on Saturday Night Live, The late show with Stephen
+  Colbert, Popstar, Disjointed (Netflix), Wild N&#39; Out, 50 Central (BET), Chicago Med, Don’t Worry, he
+  worn’t get far on foot, Julius (NYTVF), Bouncers, Second City ETC, Second City Main Stage, Second
+  City Touring Company, and Numerous Commercials
+
+image: "3peat.jpg"
+facebook: "https://www.facebook.com/3Peat-123106297853431/"
+url: "http://ioimprov.com/chicago/shows/3peat/"
+headliner: true
+
+cast:
+  - nnamdi-ngwe
+  - patrick-rowland
+  - shantira-jackson
+
+showtimes:
+  - day: Saturday
+    time: 10:00pm
+    stage: Main Stage
+    tix: https://www.freshtix.com/events/search-engine-3peat

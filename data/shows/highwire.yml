@@ -1,0 +1,22 @@
+title: "Highwire Comedy Co."
+location: "Atlanta, GA"
+bio: |
+  _Highwire Comedy Co. Presents_: *Honeymoon*
+
+  Honeymoon is that first month after marriage, when there is nothing but tenderness and pleasure.
+  We'll carry you over the threshold and weave a web of lovable weirdos and characters.
+
+  Featuring: Lindsey Dunn, Jeremy Gragg, Spencer Murrill, Amanda Pinney, Simon Rakestraw,
+  Armond Snowden, and Sarah Stephens
+
+image: "highwire.png"
+url: "http://www.highwirecomedy.com/"
+facebook: "https://www.facebook.com/highwirecomedy"
+twitter: "highwirecomedy"
+instagram: "https://instagram.com/highwirecomedy/"
+
+showtimes:
+  - day: Thursday
+    time: 09:00pm
+    stage: Main Stage
+    tix: https://www.freshtix.com/events/tba

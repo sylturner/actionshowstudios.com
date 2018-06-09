@@ -1,0 +1,25 @@
+title: "The Defiant Thomas Brothers"
+location: "Chicago, IL"
+bio: |
+  The Defiant Thomas Brothers are Seth Thomas and Paul Thomas. Known for their
+  commanding stage presence, commitment to character and timing, and ability to mine laughs all
+  along the sensitivity spectrum, the Defiant Thomas Brothers roamed the Chicago comedy
+  stages in the pre-YouTube era when political correctness was only a child. Just over two years
+  after they began running their sketch show once a week in a black box theater in Chicago's
+  Uptown, they were invited to HBO’s prestigious U.S. Comedy Arts Festival, where they won the
+  award for best sketch group alongside best alternative act Flight of the Conchords. A year later,
+  they were gone. In 2015, they came back. After a much-anticipated return in Chicago, they
+  completed an extended run at Second City’s Donny’s Skybox and Second City Blackout
+  Cabaret, and have been performing across the country ever since.
+image: "defiant-thomas-brothers.jpg"
+url: "http://www.defiant-thomas-brothers.com"
+twitter: defthomasbros
+facebook: https://www.facebook.com/defiantthomasbrothers
+instagram: https://www.instagram.com/defiantthomasbrothers/
+headliner: true
+
+showtimes:
+  - day: Thursday
+    time: 10:00pm
+    stage: Main Stage
+    tix: "https://www.freshtix.com/events/defiant-thomas-brothers"

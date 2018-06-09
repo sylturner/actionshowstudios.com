@@ -1,0 +1,16 @@
+title: "The Audacity"
+location: "Orlando, FL"
+bio: |
+  We are a group of six improvisors who perform regularly in Orlando, Florida. We are graduates of Sak University and Adlib Theater.
+
+  We have performed DCM in New York City, Miami Improv Festival of 2018, as well the Inaugural Central Florida Improv Festival. Also, you can catch us at local breweries or small theaters in the Orlando area.
+
+image: "audacity.jpg"
+facebook: https://www.facebook.com/TheAudacityImprov/
+instagram: https://www.instagram.com/theaudacityimprov/
+
+showtimes:
+  - day: Saturday
+    time: 08:30pm
+    stage: Black Box
+    tix: https://www.freshtix.com/events/j-names

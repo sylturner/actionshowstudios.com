@@ -1,0 +1,19 @@
+title: "The Nat Turner Revue"
+location: "New York City, NY"
+bio: |
+  The Nat Turner Revue started in 1993. This group went from open mics to a Hall of Fame comedy group. They are considered innovators for the style of shows as well as for innovations in improv forms. This combination of high energy and unique forms help propel them to being New York City's most decorated comedy group.
+
+  The group also made a name for itself among stand ups. They were the only improv/sketch group that was a feature or headline act with stand ups in stand up venues. Which is rare in the US. Also appearances on the BBC & Irish radio help give them the exposure they needed for their highly attended and sold out shows.
+
+image: "nat-turner-revue.jpg"
+facebook: "https://www.facebook.com/ntrevue/"
+
+showtimes:
+  - day: Friday
+    time: 07:30pm
+    stage: Black Box
+    tix: https://www.freshtix.com/events/the-nat-turner-revue
+  - day: Saturday
+    time: 07:30pm
+    stage: Black Box
+    tix: https://www.freshtix.com/events/the-nat-turner-revue

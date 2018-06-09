@@ -1,0 +1,15 @@
+title: "Tears in the Tar"
+location: "Portland, OR"
+
+bio: |
+  We aim to reach the speed, clarity, & playfulness of our Shero/Hero's The Sunday Service, Vancouver B.C
+
+  Long Form Improvisational Comedy that some times smells like short form.
+image: "tears-in-the-tar.jpg"
+youtube: 'https://www.youtube.com/watch?v=LfPwM9HZ2ro'
+
+showtimes:
+  - day: Saturday
+    time: 06:00pm
+    stage: Main Stage
+    tix: https://www.freshtix.com/events/four-first-names

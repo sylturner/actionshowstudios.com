@@ -1,0 +1,19 @@
+title: "Search Engine"
+location: Chicago, IL
+bio: |
+  This wild and imaginative duo are sure to
+  delight any audience!  Chicago comedians Craig Uhlir (iO,
+  Second City) and Ryan Archibald (iO, Second City, Village
+  Theatre)  join forces for a wicked two man improvised romp,
+  weaving characters, story lines and hilarious games into a
+  psychedelic adventure for lovers of comedy and improvisation. 
+  Recently they headlined the OKC Winter Improv Festival this
+  past December.
+image: "search-engine.jpg"
+highlight: true
+
+showtimes:
+  - day: Saturday
+    time: 10:00pm
+    stage: Main Stage
+    tix: https://www.freshtix.com/events/search-engine-3peat

@@ -1,0 +1,10 @@
+<p><strong>
+  <% if show['time'].start_with? "0" %>
+    <%= show['time'].slice(1, 6) %>
+    <% else %>
+      <%= show["time"] %>
+    <% end %>
+  </strong></p>
+<% show["shows"].each do |team| %>
+  <p><a href="/shows/<%= team %>"><%= data.shows[team].title %></a></p>
+<% end %>

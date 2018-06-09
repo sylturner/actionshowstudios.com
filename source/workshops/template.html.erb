@@ -1,0 +1,42 @@
+---
+layout: "layout"
+---
+<section id="workshop" class="container content-section">
+  <div class="row">
+    <div class="col-lg-10 col-lg-offset-1">
+      <p class="breadcrumbs"><a href="/workshops/"><i class="fa fa-chevron-left" aria-hidden="true"></i> Workshops</a></p>
+      <h1><%= workshop.title %></h1>
+      <h3>with <%= workshop.teacher %></h3>
+      <p><em><%= workshop.time %> at 
+        <% if workshop.location %>
+        </em>
+        <strong>StriKing Office</strong> - <%= link_to "Directions", "/workshops/striking-directions.pdf"%> - <a href="https://goo.gl/maps/a72u3YiBu4T2" target="_blank">Map</a>
+        <em>
+        <% else %>
+          The Village Theatre
+        <% end %>
+        </em><p>
+        <% if workshop.sold_out %>
+          <button class="btn btn-lg btn-danger" disabled>Sold out!</button>
+        <% elsif workshop.paypal %>
+          <p>
+          <form action='https://www.paypal.com/cgi-bin/webscr' method='post' target='_top'>
+            <input type='hidden' name='cmd' value='_s-xclick'>
+            <input type='hidden' name='hosted_button_id' value='<%= workshop.paypal %>'>
+            <input class="btn btn-lg btn-default" name='submit' type='submit' value='Register Now!' />
+            <img alt='' border='0' src='https://www.paypalobjects.com/en_US/i/scr/pixel.gif' width='1' height='1'>
+          </form>
+          </p>
+        <% end %>
+        <% if workshop.image && workshop.image != "" %>
+          <div class="pull-right col-xs-12 col-sm-6"><img class="img-responsive" src="/images/workshops/<%=workshop.image %>" title="<%= workshop.title %>" alt="<%= workshop.title %>"/></div>
+        <% end %>
+        <%= markdown(workshop.description) %>
+        <% if workshop.bios %>
+          <% workshop.bios.each do |bio| %>
+            <%= partial "bios/bio", locals: {bio: data.bios[bio], show_workshops: false} %>
+          <% end %>
+        <% end %>
+    </div>
+  </div>
+</section>

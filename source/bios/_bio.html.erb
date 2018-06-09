@@ -1,0 +1,26 @@
+<h2><%= bio.name %></h2>
+<% if bio.headshot %>
+  <img class="img-responsive pull-right bio-headshot" src="/images/bios/<%= bio.headshot %>" title="<%= bio.name %>" alt="<%= bio.name %>"/>
+<% end %>
+<%= markdown(bio.bio) %>
+<% if bio.workshops && show_workshops %>
+  <h3>Workshops:</h3>
+  <ul class="list">
+    <% bio.workshops.each do |workshop| %>
+      <% ws = data.workshops[workshop] %>
+      <li><a href="/workshops/<%= workshop %>/"><%= ws.title %></a> | <%= ws.time %></li>
+    <% end %>
+  </ul>
+<% end %>
+
+<% if bio.shows %>
+  <h3>Shows:</h3>
+  <ul class="list">
+    <% bio.shows.each do |show| %>
+      <% s = data.shows[show] %>
+      <% s.showtimes.each do |showtime| %>
+        <li><a href="/shows/<%= show %>/"><%= s.title %></a> | <%= showtime.day %> <%= showtime.time %> | <%= showtime.stage %></li>
+      <% end %>
+    <% end %>
+  </ul>
+<% end %>

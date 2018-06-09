@@ -1,0 +1,14 @@
+title: "After Party"
+location: "Chicago, IL"
+
+bio: |
+  After Party is an all-female musical improv group.  Even our MD and Director are….you got it!  Ladies!!  Our shows are fast paced, character-packed, high energy, and stupidly smart.
+
+  All the women of After Party are graduates of some of the best improv institutions in Chicago, including Second City, iO, and The Annoyance.
+image: "after-party.jpg"
+facebook: "https://www.facebook.com/afterpartychicago/"
+showtimes:
+  - day: Saturday
+    time: 07:00pm
+    stage: Main Stage
+    tix: https://www.freshtix.com/events/haymaker

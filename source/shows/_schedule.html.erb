@@ -1,0 +1,56 @@
+<!-- Shows Section -->
+<section id="shows" class="content-section">
+  <div class="container">
+    <div class="col-lg-8 col-lg-offset-2">
+      <h2>Shows</h2>
+      <p>The Atlanta Improv Festival will be delivering a weekend packed with improv! Tickets and passes are available below.</p>
+      <p class="text-center"><a class="btn btn-default btn-lg" href="https://www.freshtix.com/events/2018-atlanta-improv-festival"><i class="fa fa-id-badge fa"></i> Night/Weekend Passes</a></p>
+
+      <% data.schedule.each do |day| %>
+        <div class="row">
+          <h3 class="text-center"><%= day[0] %></h3>
+
+          <% day[1].each_with_index do |stage, index| %>
+            <% main_stage = (index == 0) %>
+            <div class="col-xs-6 <% if(main_stage)%>text-right main-stage-col<% end %>">
+              <h4><%= stage["stage"] %></h4>
+              <% if stage['slots'] %>
+                <% stage["slots"].each do |slot| %>
+                  <p>
+                    <strong><% if slot['time'].start_with? "0" %><%= slot['time'].slice(1, 6) %><% else %><%= slot['time'] %><% end %></strong>
+                  </p>
+                  <div class="slot">
+                    <%= markdown(slot['text']) if slot['text'] %>
+                    <% shows = data.shows.select{|filename, show| show['showtimes'].any?{|showtime| (showtime["day"] == day[0].capitalize) && (showtime["time"] == slot['time']) && (showtime["stage"] == stage['stage'])}} %>
+                    <% shows.each do |filename, show| %>
+                      <p class="<% if show['highlight'] %>highlight<% end %><% if show['headliner'] %>headliner<% end %>">
+                        <a href="/shows/<%= filename %>/"><%= show["title"] %></a>
+                      </p>
+                    <% end %>
+
+                    <% showtime = shows.to_a[0].to_a[1]['showtimes'].select{|st| (st["day"] == day[0].capitalize) && (st["time"] == slot['time']) && (st["stage"] == stage['stage'])}.first rescue nil %>
+                    <% if (showtime && showtime['tix']) || slot['tix'] %>
+                      <% if showtime %>
+                        <% tickets = showtime['tix'] %>
+                      <% else %>
+                        <% tickets = slot['tix'] %>
+                      <% end %>
+                      <p><a href="<%= tickets %>" class="btn btn-default"><i class='fa fa-ticket' aria-hidden='true'></i> Tix</a></p>
+                    <% end %>
+                  </div>
+                <% end %>
+              <% end %>
+            </div>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</section>
+<section id="shows-linear" class="content-section">
+  <div class="container">
+    <div class="col-lg-8 col-lg-offset-2">
+
+    </div>
+  </div>
+</section>

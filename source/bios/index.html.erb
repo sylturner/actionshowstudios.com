@@ -1,0 +1,13 @@
+<!-- bios Section -->
+<section id="bios" class="content-section">
+  <div class="container">
+    <div class="col-xs-12">
+      <h1>Performers</h1>
+        <% data.bios.sort_by{|bio| bio[1]["name"]}.each do |bio| %>
+          <p class="text-center" style="display: inline-block; padding: 0 10px;">
+            <a href="/bios/<%= bio[0] %>/"><img src="/images/bios/<%= bio[1]["headshot"] %>" class="headshot-index"/><br/><%= bio[1]["name"] %></a>
+          </p>
+        <% end %>
+    </div>
+  </div>
+</section>

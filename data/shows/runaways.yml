@@ -1,0 +1,14 @@
+title: "Runaways"
+location: "Orlando, FL"
+bio: |
+  Running away to find adventure, these ladies have formed a strong bond, trusting eachother implicitly both on the stage and off.  They have played together in varying capacities and configurations for over a year.  Each runaway bringing a diverse set of experiences and skills to the table.
+
+  These ladies invite the audience to join their adventure.  Come run away with us!
+image: "runaways.jpg"
+facebook: "https://www.facebook.com/improvRunaways"
+
+showtimes:
+  - day: Friday
+    time: 07:00pm
+    stage: Main Stage
+    tix: https://www.freshtix.com/events/tipsy-zone-runaways

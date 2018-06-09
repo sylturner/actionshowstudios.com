@@ -1,0 +1,17 @@
+title: "The Tipsy Zone"
+location: "Atlanta, GA"
+bio: |
+  The Tipsy Zone is a fully improvised long form show based on the cult classic TV show the Twilight Zone.
+  All our performers perform in black and white period clothing in the 50's and 60's style. To make the
+  show even more difficult, a small liquor bar sets just off center stage. At any time during the show,
+  any actor can offer another actor a drink and they must accept AND finish that drink before they're
+  allowed to leave the stage. Come and join us as we leave this dimension behind and slowly enter...
+  _The Tipsy Zone_!
+image: "tipsy-zone.jpg"
+facebook: "https://www.facebook.com/TheTipsyZone"
+
+showtimes:
+  - day: Friday
+    time: 07:00pm
+    stage: Main Stage
+    tix: https://www.freshtix.com/events/tipsy-zone-runaways

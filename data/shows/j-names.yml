@@ -1,0 +1,23 @@
+title: "J Names"
+location: "Portland, OR"
+bio: |
+  If you were to make a top-ten list of the best Improvisors in Portland,
+  coincidentally (or not so coincidentally) most of the names on that list are J Names.
+  This group is made up of Michael Jordan’s from every comedy theater in Portland.
+  J Names came out as a record setter on the competitive show Friday Night Fights and
+  has never slowed:Out-of-Bounds Comedy Festival, Vancouver International Improv Festival,
+  San Diego Improv Festival, Seattle Festival of Improvised Theater, etc…
+
+image: "j-names.jpg"
+url: http://www.jnamescomedy.com/
+facebook: https://www.facebook.com/jnamesimprov/
+
+showtimes:
+  - day: Thursday
+    time: 09:00pm
+    stage: Main Stage
+    tix: https://www.freshtix.com/events/tba
+  - day: Saturday
+    time: 08:30pm
+    stage: Black Box
+    tix: https://www.freshtix.com/events/j-names

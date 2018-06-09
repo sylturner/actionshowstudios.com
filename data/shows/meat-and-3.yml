@@ -1,0 +1,16 @@
+title: "Meat & 3"
+location: "Atlanta, GA"
+
+bio: |
+  Village Theatre’s artistic director, Ryan Archibald, invites different guests from all around Atlanta and
+  beyond to join him each week for a fully improvised set.  This is an opportunity to see different styles
+  and personalities come together and spontaneously create hilarious and memorable scenes, characters and
+  stories right before your very eyes.  A “must see” for improv nerds and comedy fans!
+image: "meat-and-3.jpg"
+url: "http://villagecomedy.com/"
+
+showtimes:
+  - day: Thursday
+    time: 08:00pm
+    stage: Main Stage
+    tix: https://www.freshtix.com/events/danger-the-show-and-meat--3
