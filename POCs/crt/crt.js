@@ -1,6 +1,6 @@
 var main = document.querySelector('#tv'),
-	canvas = document.getElementById('canvas'),
-	ctx = canvas.getContext('2d'),
+	//canvas = document.getElementById('canvas'),
+	//ctx = canvas.getContext('2d'),
 	text = document.querySelector('.text'),
 	ww = window.innerWidth,
 	menu = document.querySelector('.menu'),
@@ -11,29 +11,29 @@ var main = document.querySelector('#tv'),
 	frame;
 
 // Set canvas size
-canvas.width = ww / 3;
-canvas.height = (ww * 0.5625) / 3;
+//canvas.width = ww / 3;
+//canvas.height = (ww * 0.5625) / 3;
 
 // Generate CRT noise
-function snow(ctx) {
+//function snow(ctx) {
 
-	var w = ctx.canvas.width,
-		h = ctx.canvas.height,
-		d = ctx.createImageData(w, h),
-		b = new Uint32Array(d.data.buffer),
-		len = b.length;
+	//var w = ctx.canvas.width,
+		//h = ctx.canvas.height,
+		//d = ctx.createImageData(w, h),
+		//b = new Uint32Array(d.data.buffer),
+		//len = b.length;
 
-	for (var i = 0; i < len; i++) {
-		b[i] = ((255 * Math.random()) | 0) << 24;
-	}
+	//for (var i = 0; i < len; i++) {
+		//b[i] = ((255 * Math.random()) | 0) << 24;
+	//}
 
-	ctx.putImageData(d, 0, 0);
-}
+	//ctx.putImageData(d, 0, 0);
+//}
 
-function animate() {
-	snow(ctx);
-	frame = requestAnimationFrame(animate);
-};
+//function animate() {
+	//snow(ctx);
+	//frame = requestAnimationFrame(animate);
+//};
 
 // Glitch
 for (i = 0; i < 4; i++) {
@@ -45,8 +45,8 @@ window.addEventListener('DOMContentLoaded', function(e) {
   setTimeout(function() {
     main.classList.add('on');
     main.classList.remove('off');
-    animate();
-  }, 1000);
+    //animate();
+  }, 1500);
 });
 
 window.addEventListener('keydown', function(e) {
@@ -68,7 +68,10 @@ window.addEventListener('keydown', function(e) {
 				break;
 		}
 
-		ul.children[prev].classList.remove('active');
-		ul.children[idx].classList.add('active');
+		//ul.children[prev].classList.remove('active');
+    //ul.children[idx].classList.add('active');
+
+    ul.children[prev].classList.remove('active');
+    ul.children[idx].classList.add('active');
 	}
 }, false);
