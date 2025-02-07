@@ -1,0 +1,20 @@
+{
+  "main": [
+    { "title": "Work", "page": "work" },
+    { "title": "Equipment Rentals", "external_link": "https://www.sharegrid.com/p/sean_bokelmann" },
+    { "title": "About", "page": "about" },
+    { "title": "Contact", "page": "contact" }
+  ],
+  "socials": [
+    { "title": "Instagram", "url": "https://instagram.com/actionshowstudios" },
+    { "title": "YouTube",   "url": "https://youtube.com/actionshowstudios" },
+    { "title": "Facebook",  "url": "https://facebook.com/ActionShowStudios" },
+    { "title": "Twitch",    "url": "https://twitch.tv/actionshowstudios" },
+    { "title": "Kick",      "url": "https://kick.com/actionshowstudios" },
+    { "title": "TikTok",    "url": "https://www.tiktok.com/@actionshowstudios" },
+    { "title": "Vimeo",     "url": "https://vimeo.com/user87424039" },
+    { "title": "Address",   "url": "https://maps.app.goo.gl/np6PYfVwxFEoZDJH9" },
+    { "title": "Phone",     "url": "tel:4048551606" },
+    { "title": "Email",     "url": "mailto:actionshowstudios@gmail.com" }
+  ]
+}

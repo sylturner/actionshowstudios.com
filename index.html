@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Action Show Studios</title>
+    <link rel="stylesheet" href="./assets/css/crt.css">
+
+    <script type="module">
+      import { Application } from "./assets/js/stimulus.js";
+      import MenuController from "./assets/js/controllers/menu_controller.js";
+      import VideoListingController from "./assets/js/controllers/video_listing_controller.js";
+      import ScreenController from "./assets/js/controllers/screen_controller.js";
+      import PageController from "./assets/js/controllers/page_controller.js";
+
+      const application = Application.start();
+      application.register("menu", MenuController);
+      application.register("video_listing", VideoListingController);
+      application.register("screen", ScreenController);
+      application.register("page", PageController);
+    </script>
+  </head>
+  <body>
+    <div id="tv" class="scanlines">
+      <div class="screen" data-controller="screen">
+        <div id="player" data-controller="tv">
+          <iframe
+            id="videos"
+            src="https://player.vimeo.com/video/751390334?background=1&autoplay=1&muted=1&loop=1"
+            frameborder="0"
+            allow="autoplay; fullscreen"></iframe>
+        </div>
+        <div class="overlay">
+
+          <!-- Channel -->
+          <div class="channel" data-screen-target="channel">
+            <span>ASSSS+</span>
+          </div>
+
+          <!-- Menu -->
+          <div class="menu" data-controller="menu" data-menu-target="menu" data-screen-target="menu">
+            <header>Action Show Studios</header>
+
+            <!-- links populated from /assets/js/data/main-menu.json -->
+            <ul data-menu-target="links"></ul>
+
+            <!-- socials populated from /assets/js/data/main-menu.json -->
+            <div class="footer">
+              <div class="social-icons" data-menu-target="socials"> </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Page -->
+        <div class="page" data-controller="page" data-page="about" data-screen-target="page">
+          <header><h1 data-page-target="title"></h1><button class="close-button" data-action="screen#closePage">X</button></header>
+          <div class="container" data-page-target="container"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

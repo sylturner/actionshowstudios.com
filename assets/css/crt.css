@@ -10,21 +10,21 @@ body {
   z-index: -1;
 }
 @font-face {
-  src: url(terminal_copy.ttf);
+  src: url(../fonts/terminal_copy.ttf);
   font-family: "Terminal";
 }
 @font-face {
-  src: url(sys.ttf) format("truetype");
+  src: url(../fonts/sys.ttf) format("truetype");
   font-family: "Sys";
 }
 
 @font-face {
-  src: url(vcr.ttf) format("truetype");
+  src: url(../fonts/vcr.ttf) format("truetype");
   font-family: "VCR";
 }
 
 @font-face {
-  src: url(dos.ttf) format("truetype");
+  src: url(../fonts/dos.ttf) format("truetype");
   font-family: "DOS";
 }
 .screen::before {
@@ -57,7 +57,7 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
-  background-image: url("crt.png");
+  background-image: url("../images/crt.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   content: "";
@@ -97,8 +97,7 @@ body {
   text-shadow: 1px 1px 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000;
   filter: blur(1px);
   color: #fff;
-  -webkit-animation: jerkup 100ms infinite;
-          animation: jerkup 100ms infinite;
+  animation: jerkup 100ms infinite;
   bottom: 0;
   z-index: 3;
   pointer-events: auto;
@@ -107,10 +106,8 @@ body {
 .menu header {
   color: #e7e05c;
   background: linear-gradient(90deg, rgba(0,249,255,0) 0%, rgba(125,248,242,1) 36%, rgba(242,156,226,1) 69%, rgba(255,0,241,1) 100%);
-  /*margin-bottom: 10px;*/
   padding: 10px 15px;
-  -webkit-animation: 5s ease 2000ms normal none infinite running;
-          animation: 5s ease 2000ms normal none infinite running;
+  animation: 5s ease 2000ms normal none infinite running;
   border-bottom: solid 4px #FFF;
 }
 .menu ul {
@@ -122,9 +119,6 @@ body {
   list-style: outside none none;
   border-bottom: solid 4px #FFF;
 }
-/*.menu ul li:last-child {*/
-  /*border-bottom: none;*/
-/*}*/
 
 .menu ul li:hover,
 .menu ul li a:focus,
@@ -166,19 +160,24 @@ body {
   background-color: #1af2ff;
 }
 
+.menu.disabled {
+  background-color: #003366;
+  filter: blur(5px) contrast(0.8) brightness(0.8);
+  pointer-events: none;
+  position: relative;
+}
+
 .on .picture {
-  -webkit-animation: 500ms linear 0ms normal forwards 1 running on;
-          animation: 500ms linear 0ms normal forwards 1 running on;
+  animation: 500ms linear 0ms normal forwards 1 running on;
 }
 
 .off .picture {
-  -webkit-animation: 750ms cubic-bezier(0.23, 1, 0.32, 1) 0ms normal forwards 1 running off;
-          animation: 750ms cubic-bezier(0.23, 1, 0.32, 1) 0ms normal forwards 1 running off;
+  animation: 750ms cubic-bezier(0.23, 1, 0.32, 1) 0ms normal forwards 1 running off;
 }
 
-.text {
+.channel {
   color: lime;
-  opacity: 0;
+  opacity: 1;
   filter: blur(0.5px);
   font-family: Sys;
   font-size: 6vmin;
@@ -189,7 +188,7 @@ body {
   width: 200px;
 }
 
-.on .text, .on .menu {
+.on {
   opacity: 1;
   transition: opacity 10ms ease 2500ms;
 }
@@ -223,25 +222,7 @@ body {
     opacity: 1;
   }
 }
-@-webkit-keyframes off {
-  0% {
-    transform: scale(1, 1);
-    filter: brightness(1);
-  }
-  40% {
-    transform: scale(1, 0.005);
-    filter: brightness(100);
-  }
-  70% {
-    transform: scale(1, 0.005);
-  }
-  90% {
-    transform: scale(0.005, 0.005);
-  }
-  100% {
-    transform: scale(0, 0);
-  }
-}
+
 @keyframes off {
   0% {
     transform: scale(1, 1);
@@ -261,58 +242,42 @@ body {
     transform: scale(0, 0);
   }
 }
-.text span {
+.channel span {
   filter: blur(1px);
   position: absolute;
 }
 
-.text span:nth-child(1) {
+.channel span:nth-child(1) {
   color: red;
   margin-left: -2px;
   filter: blur(2px);
 }
 
-.text span:nth-child(2) {
+.channel span:nth-child(2) {
   color: lime;
   margin-left: 2px;
   filter: blur(2px);
 }
 
-.text span:nth-child(3) {
+.channel span:nth-child(3) {
   color: blue;
   position: 20px 0;
   filter: blur(1px);
 }
 
-.text span:nth-child(4) {
+.channel span:nth-child(4) {
   color: #fff;
   filter: blur(1px);
   text-shadow: 0 0 50px rgba(255, 255, 255, 0.4);
 }
 
-.text span:nth-child(5) {
+.channel span:nth-child(5) {
   color: rgba(255, 255, 255, 0.1);
   filter: blur(15px);
 }
 
-.text span {
-  -webkit-animation: blur 30ms infinite, jerk 50ms infinite;
-          animation: blur 30ms infinite, jerk 50ms infinite;
-}
-
-@-webkit-keyframes blur {
-  0% {
-    filter: blur(1px);
-    opacity: 0.8;
-  }
-  50% {
-    filter: blur(1px);
-    opacity: 1;
-  }
-  100% {
-    filter: blur(1px);
-    opacity: 0.8;
-  }
+.channel span {
+  animation: blur 30ms infinite, jerk 50ms infinite;
 }
 
 @keyframes blur {
@@ -329,14 +294,7 @@ body {
     opacity: 0.8;
   }
 }
-@-webkit-keyframes jerk {
-  50% {
-    transform: translateX(1px);
-  }
-  51% {
-    transform: translateX(0);
-  }
-}
+
 @keyframes jerk {
   50% {
     transform: translateX(1px);
@@ -345,14 +303,7 @@ body {
     transform: translateX(0);
   }
 }
-@-webkit-keyframes jerkup {
-  0% {
-    transform: translateY(1px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
+
 @keyframes jerkup {
   0% {
     transform: translateY(1px);
@@ -361,38 +312,14 @@ body {
     transform: translateY(0);
   }
 }
-.text span:nth-child(2) {
-  -webkit-animation: jerkup 1s infinite;
-          animation: jerkup 1s infinite;
+.channel span:nth-child(2) {
+  animation: jerkup 1s infinite;
 }
 
-.overlay .text {
-  -webkit-animation: 5s ease 2000ms normal none infinite running;
-          animation: 5s ease 2000ms normal none infinite running;
+.overlay .channel {
+  animation: 5s ease 2000ms normal none infinite running;
 }
 
-@-webkit-keyframes glitch {
-  40% {
-    opacity: 1;
-    transform: scale(1, 1);
-    transform: skew(0, 0);
-  }
-  41% {
-    opacity: 0.8;
-    transform: scale(1, 1.2);
-    transform: skew(80deg, 0);
-  }
-  42% {
-    opacity: 0.8;
-    transform: scale(1, 1.2);
-    transform: skew(-50deg, 0);
-  }
-  43% {
-    opacity: 1;
-    transform: scale(1, 1);
-    transform: skew(0, 0);
-  }
-}
 
 @keyframes glitch {
   40% {
@@ -416,6 +343,7 @@ body {
     transform: skew(0, 0);
   }
 }
+
 #tv {
   position: fixed;
   top: 0;
@@ -432,9 +360,9 @@ body {
   overflow: hidden;
 
   background:
-    repeating-radial-gradient(#000 0 0.0001%,#fff 0 0.0002%) 50% 0/2500px 2500px,
-    repeating-conic-gradient(#000 0 0.0001%,#fff 0 0.0002%) 60% 60%/2500px 2500px;
-    background-blend-mode: difference;
+  repeating-radial-gradient(#000 0 0.0001%,#fff 0 0.0002%) 50% 0/2500px 2500px,
+  repeating-conic-gradient(#000 0 0.0001%,#fff 0 0.0002%) 60% 60%/2500px 2500px;
+  background-blend-mode: difference;
   animation: snow .2s infinite alternate;
 }
 
@@ -442,6 +370,28 @@ body {
   100% {background-position: 50% 0, 60% 50%}
 }
 
+@keyframes fade-in {
+  0% { opacity: 0; transform: scale(0), translate(-50%, -50%); display: block }
+  100% { opacity: 1; transform: scale(1), translate(-50%, -50%); display: block }
+}
+
+.fade-in {
+  animation: fade-in 250ms steps(3, end) forwards;
+  transform-origin: center;
+}
+
+@keyframes fade-out {
+  0%   { opacity: 1; transform: scale(1), translate(-50%, -50%); display: block; }
+  100% { opacity: 0; transform: scale(0), translate(-50%, -50%); display: none; }
+}
+
+.fade-out {
+  animation: fade-out 250ms steps(3, end) forwards;
+}
+
+.hide {
+  opacity: 0;
+}
 
 #player {
   position: absolute;
@@ -452,7 +402,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: black;
+  background: none;
 }
 
 iframe {
@@ -464,9 +414,72 @@ iframe {
   transform: translate(-50%, -50%);
 }
 
+.page {
+  display: none;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80vw;
+  max-width: 1000px;
+  height: auto;
+  max-height: 90vh;
+  transform: translate(-50%, -50%);
+
+  background-color: #0069ff;
+  box-sizing: border-box;
+  font-family: "DOS";
+  line-height: 1.4;
+  /*font-family: "Terminal";*/
+  font-size: 20pt;
+  text-shadow: 1px 1px 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000;
+  filter: blur(1px);
+  color: #fff;
+  /*animation: jerkup 100ms infinite;*/
+  z-index: 10;
+  box-shadow: 15pt 15pt 0pt -1pt rgba(0,0,0,1);
+}
+.page header {
+  font-family: "Sys";
+  color: #e7e05c;
+  background: linear-gradient(90deg, rgba(0,249,255,0) 0%, rgba(125,248,242,1) 36%, rgba(242,156,226,1) 69%, rgba(255,0,241,1) 100%);
+  padding: 15pt 10pt;
+  border-bottom: solid 4px #FFF;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page header h1 {
+  margin: 0;
+  font-size: 30pt;
+}
+
+.page .close-button {
+  font-family: "DOS";
+  font-size: 28pt;
+  background: #0069FF;
+  color: #FFF;
+  /*border-radius: 6px;*/
+  padding: 10px 10px 0px 10px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+
+.page .close-button:hover {
+  background: #0040aa;
+}
+.page .container {
+  padding-left: 15pt;
+  padding-right: 15pt;
+}
+
+
 /* Medium screens (tablets, small desktops) */
 @media (max-width: 1024px) {
-  .menu {
+  .menu, .page {
     width: 85%;
     font-size: 35pt;
   }
@@ -474,9 +487,9 @@ iframe {
 
 /* Small screens (phones) */
 @media (max-width: 768px) {
-  .menu {
+  .menu, .page {
     width: 90%;
-    font-size: 45pt;
+    font-size: 60pt;
   }
 }
 
