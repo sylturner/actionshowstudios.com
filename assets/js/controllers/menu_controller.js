@@ -15,9 +15,9 @@ export default class extends Controller {
 
   createLinks(data) {
     data.main.forEach((node) => {
-      const li = document.createElement('li');
-
       const link = document.createElement('a');
+      link.classList.add("list-group-item");
+      link.classList.add("list-group-item-action");
       link.title = node.title;
       link.textContent = node.title;
 
@@ -31,8 +31,7 @@ export default class extends Controller {
         link.dataset.action = "screen#openPage";
       }
 
-      li.appendChild(link);
-      this.linksTarget.appendChild(li)
+      this.linksTarget.appendChild(link)
     });
     this.createSocialLinks(data);
   }
@@ -43,6 +42,7 @@ export default class extends Controller {
       link.title = social.title;
       link.href = social.url;
       link.target = "_blank";
+      link.classList.add("p-2")
 
       const img = document.createElement('img');
       img.src = `/assets/images/icons/${social.title.toLowerCase()}.png`

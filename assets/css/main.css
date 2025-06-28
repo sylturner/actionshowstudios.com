@@ -1,0 +1,126 @@
+:root {
+  /* ASS settings */
+  --ass-background-color: #0069FF;
+  --ass-body-font-color: #FFF;
+  --ass-body-font-color-rgb: 255, 255, 255;
+  --ass-body-font-family: "DOS", monospace;
+  --ass-header-background: linear-gradient(90deg, rgba(0,249,255,0) 0%, rgba(125,248,242,1) 36%, rgba(242,156,226,1) 69%, rgba(255,0,241,1) 100%);
+  --ass-header-font-color: #E7E05C;
+  --ass-hover-link-color: #1AF2FF;
+  --ass-card-box-shadow: 15pt 15pt 0pt -1pt rgba(0,0,0,1);
+
+  /* BS overrides */
+  --bs-primary: var(--ass-body-font-color);
+  --bs-primary-rgb: var(--ass-body-font-color-rgb);
+  --bs-link-color: var(--ass-body-font-color);
+  --bs-link-color-rgb: var(--ass-body-font-color-rgb);
+  --bs-font-sans-serif: var(--ass-body-font-family);
+  --bs-border-radius: 0;
+}
+
+.main-menu {
+  width: 85%;
+}
+
+.main-menu.disabled {
+  background-color: #003366;
+  filter: blur(5px) contrast(0.8) brightness(0.8);
+  pointer-events: none;
+  position: relative;
+}
+
+.card {
+  pointer-events: auto;
+  filter: blur(1px);
+  text-shadow: 1px 1px 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000;
+  background-color: var(--ass-background-color);
+  box-shadow: var(--ass-card-box-shadow);
+  color: var(--bs-primary);
+}
+
+.card-header {
+  color: var(--ass-header-font-color);;
+  background: var(--ass-header-background);;
+  animation: 5s ease 2000ms normal none infinite running;
+  border-bottom: solid 4px #FFF;
+}
+.card-header h1 {
+  margin-bottom: 0;
+}
+
+.card .list-group-flush a {
+  background-color:  var(--ass-background-color);
+  color: var(--bs-primary);
+}
+
+
+.card .list-group-flush a:focus,
+.card .list-group-flush a:hover,
+.card .list-group-flush a:active {
+  background-color: var(--ass-hover-link-color);
+  color: var(--bs-primary);
+}
+
+.social-icons a:hover,
+.social-icons a:focus,
+.social-icons a:active {
+  background-color: var(--ass-hover-link-color);
+}
+
+.social-icons a:hover img,
+.social-icons a:focus img,
+.social-icons a:active img {
+  filter: invert(1)
+}
+
+.page {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: var(--ass-card-box-shadow);
+  width: 80vw;
+  max-height: 80vh;
+  overflow: auto;
+}
+
+.page .close-button {
+  font-family: "DOS";
+  font-size: 28pt;
+  border-radius: 0;
+  padding: 10px 10px 0px 10px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.thumbnail-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.thumbnail-wrapper img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120px;
+  height: 120px;
+  background: rgba(255, 255, 255, 0.9);
+  clip-path: polygon(25% 15%, 75% 50%, 25% 85%);
+  z-index: 2;
+  transition: background 0.2s;
+}
+
+.thumbnail-wrapper:hover .play-icon {
+  background: rgba(255, 255, 0, 0.9);
+}
+/*.hide {*/
+  /*display: none;*/
+/*}*/
