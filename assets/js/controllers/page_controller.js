@@ -10,7 +10,7 @@ export default class extends Controller {
 
   load() {
     const pageName = this.element.dataset.page;
-    fetch(`/assets/js/data/pages/${pageName}.json`)
+    fetch(`/assets/js/data/pages/${pageName}.json`, { cache: 'no-store' })
       .then(res => res.json())
       .then(data => this.render(data));
   }
