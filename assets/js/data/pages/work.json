@@ -1,0 +1,59 @@
+{
+  "title": "Work",
+  "type": "gallery",
+  "sections": [
+    {
+      "heading": "Reels",
+      "items": [
+        {
+          "title": "Reel (2022)",
+          "video_url": "https://vimeo.com/751390334",
+          "thumbnail": "reel-2022.jpg"
+        }
+      ]
+    },
+    {
+      "heading": "Features",
+      "items": [
+        {
+          "title": "Action Show Studios Spookshow Spooktacular",
+          "description": "Feature-length Halloween special.<br/>Co-production with <a href='https://mediateamgo.com'>Media Team</a> and <a href='https://www.silverscreamfxlab.com/'>Silver Scream FX Lab</a>",
+          "video_url": "https://www.youtube.com/watch?v=p-qek54WnJo",
+          "thumbnail": "spookshow.jpg"
+        },
+        {
+          "title": "The Joe Pettis 420 Holiday Variety Show",
+          "description": "Feature-length Christmas special.<br/>Hosted by stand-up comedian <a href='https://joepettis.com/'>Joe Pettis</a>.",
+          "video_url": "https://www.youtube.com/watch?v=2xJrucJg_yM",
+          "thumbnail": "joe-pettis.jpg"
+        }
+      ]
+    },
+    {
+      "heading": "Sketches",
+      "items": [
+        {
+          "title": "Improv to Green Screen Class Show",
+          "video_url": "https://www.youtube.com/watch?v=DEh9yPRN_g8",
+          "thumbnail": "improv-to-green-screen.jpg",
+          "description": "Our improv to sketch to green screen class's pilot episode"
+        },
+        {
+          "title": "ASMR Eulogy",
+          "video_url": "https://www.youtube.com/watch?v=TBX5bLtaQLI",
+          "thumbnail": "asmr-eulogy.jpg"
+        },
+        {
+          "title": "DJ Klaus commercial",
+          "video_url": "https://www.youtube.com/watch?v=NEBJcWInbPs",
+          "thumbnail": "dj-klaus.jpg"
+        },
+        {
+          "title": "ASS Breaking News Siren",
+          "video_url": "https://www.youtube.com/watch?v=iNyXV3jh-0E",
+          "thumbnail": "ass-breaking.jpg"
+        }
+      ]
+    }
+  ]
+}

@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
     <title>Action Show Studios</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
     <link rel="stylesheet" href="./assets/css/crt.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
 
     <script type="module">
       import { Application } from "./assets/js/stimulus.js";
@@ -20,7 +25,7 @@
     </script>
   </head>
   <body>
-    <div id="tv" class="scanlines">
+    <div id="tv" class="container-fluid scanlines">
       <div class="screen" data-controller="screen">
         <div id="player" data-controller="tv">
           <iframe
@@ -36,27 +41,34 @@
             <span>ASSSS+</span>
           </div>
 
-          <!-- Menu -->
-          <div class="menu" data-controller="menu" data-menu-target="menu" data-screen-target="menu">
-            <header>Action Show Studios</header>
+          <!-- Main Menu -->
+          <div class="main-menu" data-controller="menu" data-menu-target="menu" data-screen-target="menu">
+            <div class="card">
+              <div class="card-header text-center fs-1"><h1>Action Show Studios</h1></div>
+                <!-- links populated from /assets/js/data/main-menu.json -->
+                <div class="list-group list-group-flush fs-2" data-menu-target="links"></div>
 
-            <!-- links populated from /assets/js/data/main-menu.json -->
-            <ul data-menu-target="links"></ul>
-
-            <!-- socials populated from /assets/js/data/main-menu.json -->
-            <div class="footer">
-              <div class="social-icons" data-menu-target="socials"> </div>
+                <!-- socials populated from /assets/js/data/main-menu.json -->
+                <div class="card-footer border-top">
+                  <div class="social-icons d-flex justify-content-evenly flex-wrap" data-menu-target="socials"> </div>
+                </div>
             </div>
+          </div> <!-- end main menu -->
 
-          </div>
-        </div>
+          <!-- Page -->
+          <div class="page" data-controller="page" data-page="about" data-screen-target="page">
+            <div class="card flex-column">
+              <div class="card-header d-flex">
+                <h2 data-page-target="title" class="fs-1 flex-grow-1 align-self-center mb-0"></h2>
+                <button class="btn btn-primary close-button" data-action="screen#closePage">X</button>
+              </div>
+              <div class="card-body fs-3 overflow-auto" data-page-target="content"></div>
+            </div>
+          </div> <!-- end page -->
 
-        <!-- Page -->
-        <div class="page" data-controller="page" data-page="about" data-screen-target="page">
-          <header><h1 data-page-target="title"></h1><button class="close-button" data-action="screen#closePage">X</button></header>
-          <div class="container" data-page-target="container"></div>
-        </div>
-      </div>
+        </div> <!-- end overlay -->
+      </div> <!-- end screen -->
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
   </body>
 </html>
