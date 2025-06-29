@@ -32,7 +32,6 @@ export default class extends Controller {
   }
 
   renderGallery(data) {
-    // TODO: Gallery view
     this.contentTarget.innerHTML = '';
     const sections = data.sections.map((section) => {
       const sectionEl = document.createElement('section');
